@@ -8,7 +8,7 @@ npx tsc --init
 ```
 
 # Compiling
-- Make sure rootdir and outdir are not commented in tsconfig.json 
+- Make sure rootdir and outdir are not commented in `tsconfig.json` 
 - To compile run:
 ```
 tsc
