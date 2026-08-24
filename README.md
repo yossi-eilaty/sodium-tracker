@@ -24,6 +24,57 @@ The **Sodium Tracker** application is a serverless, mobile-first web app designe
 `|                                       |`  
 `+---------------------------------------+`
 
+
+```mermaid
+block-beta
+    columns 1
+    
+    %% Main Container
+    block:ScreenContainer
+        columns 1
+        
+        space
+        title["<b>SODIUM TRACKER (מעקב נתרן)</b>"]
+        space
+        
+        %% Tab Switcher
+        block:Tabs
+            columns 2
+            loginTab["<b>[ Login ]</b>"]
+            regTab["Register"]
+        end
+        
+        space
+        
+        %% Form Fields
+        block:Form
+            columns 1
+            lblEmail["Username / Email:"]
+            inputEmail["yossi@example.com"]
+            
+            space
+            
+            lblPass["Password:"]
+            inputPass["••••••••••••••••"]
+        end
+        
+        space
+        
+        %% Action Button
+        btnSubmit["<b>ENTER APP / כניסה</b>"]
+        space
+    end
+
+    %% Styling classes
+    style ScreenContainer fill:#f9f9f9,stroke:#333,stroke-width:2px,padding:20px
+    style title fill:#2563eb,stroke:#2563eb,color:#fff
+    style loginTab fill:#ffffff,stroke:#2563eb,stroke-width:2px,color:#2563eb
+    style regTab fill:#e2e8f0,stroke:#cbd5e1,color:#64748b
+    style inputEmail fill:#ffffff,stroke:#cbd5e1,color:#1e293b
+    style inputPass fill:#ffffff,stroke:#cbd5e1,color:#1e293b
+    style btnSubmit fill:#2563eb,stroke:#1d4ed8,color:#fff
+```
+
 ### **Screen 2: Dashboard & Daily Intake Tracker**
 
 `+---------------------------------------+`  
