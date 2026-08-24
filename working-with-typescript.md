@@ -8,12 +8,12 @@ npx tsc --init
 ```
 
 # Compiling
-- Make sure rootdir and outdir are not commented in tsconfig.json 
+- Make sure `rootdir` and `outdir` are not commented in `tsconfig.json` 
 - To compile run:
 ```
 tsc
 ```
-- The comiled js files will be stored in the outdir
+- The comiled js files will be stored in the `outdir`
 - Run the compiled js using:
 ```
 node [JS-FILE-PATH]
