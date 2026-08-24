@@ -1,0 +1,7 @@
+#/bin/bash
+
+echo "Adding, commiting and pushing"
+git add --all
+read -p "Commit message: " user_input
+git commit -m "$user_input"
+git push -u origin main

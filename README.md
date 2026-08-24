@@ -31,7 +31,7 @@ The **Sodium Tracker** application is a serverless, mobile-first web app designe
 `|  Hi, Yossi              [Settings/Out]|`  
 `+---------------------------------------+`  
 `|  TODAY'S SODIUM STATUS                |`  
-`|  [==============] 1,850mg / 2,300mg     |`  
+`|  [==============] 1,850mg / 2,300mg   |`  
 `|  Status: 80% of daily threshold       |`  
 `+---------------------------------------+`  
 `|  TODAY'S LOG HISTORY:                 |`  
@@ -46,35 +46,35 @@ The **Sodium Tracker** application is a serverless, mobile-first web app designe
 ### **Screen 3: Portion Calculator & Creator**
 
 *Supports specifying unit bases by weight (100g) or volume (100ml).*  
-`+---------------------------------------+`  
-`| < Back         PORTION CALCULATOR     |`  
-`+---------------------------------------+`  
-`|  Portion Name:                        |`  
-`|  [ Cookie                             ] |`  
-`|                                       |`  
-`|  Input Mode:                          |`  
-`|  (o) Manual Entry   ( ) AI Web Lookup |`  
-`|                                       |`  
-`|  --- Manual Fields ---                |`  
-`|  Reference Basis:                     |`  
-`|  (o) Per 100 Grams  ( ) Per 100 ml    |`  
-`|                                       |`  
-`|  Sodium per Reference Unit (mg):      |`  
-`|  [ 450                              ] |`  
-`|                                       |`  
-`|  Portion Base Unit Weight/Volume:     |`  
-`|  [ 25 ] (g or ml per single item/portion)`  
-`|                                       |`  
-`|  Calculated Sodium per Portion Unit:  |`  
-`|  >>> 112.5 mg                         |`  
-`|                                       |`  
-`|  Tags (comma separated):              |`  
-`|  [ snack, bakery, sweet               ] |`  
-`|  Share with global community? [X]     |`  
-`|  [ Upload Image ] (0 files selected)  |`  
-`|                                       |`  
-`|         [ SAVE TO MY PORTIONS ]       |`  
-`+---------------------------------------+`
+`+-------------------------------------------+`  
+`| < Back         PORTION CALCULATOR         |`  
+`+-------------------------------------------+`  
+`|  Portion Name:                            |`  
+`|  [ Cookie                           ]     |`  
+`|                                           |`  
+`|  Input Mode:                              |`  
+`|  (o) Manual Entry   ( ) AI Web Lookup     |`  
+`|                                           |`  
+`|  --- Manual Fields ---                    |`  
+`|  Reference Basis:                         |`  
+`|  (o) Per 100 Grams  ( ) Per 100 ml        |`  
+`|                                           |`  
+`|  Sodium per Reference Unit (mg):          |`  
+`|  [ 450                              ]     |`  
+`|                                           |`  
+`|  Portion Base Unit Weight/Volume:         |`  
+`|  [ 25 ] (g or ml per single item/portion) |`  
+`|                                           |`  
+`|  Calculated Sodium per Portion Unit:      |`  
+`|  >>> 112.5 mg                             |`  
+`|                                           |`  
+`|  Tags (comma separated):                  |`  
+`|  [ snack, bakery, sweet             ]     |`  
+`|  Share with global community? [X]         |`  
+`|  [ Upload Image ] (0 files selected)      |`  
+`|                                           |`  
+`|         [ SAVE TO MY PORTIONS ]           |`  
+`+-------------------------------------------+`
 
 ### **Screen 4: Food Intake Logging (Multi-Unit Entry)**
 
@@ -104,7 +104,7 @@ The **Sodium Tracker** application is a serverless, mobile-first web app designe
 `|         ⚠️ THRESHOLD WARNING          |`  
 `+---------------------------------------+`  
 `|  Adding **Cookie (337.5mg)** will     |`  
-`|  bring your total to **2,187.5mg**.     |`  
+`|  bring your total to **2,187.5mg**.   |`  
 `|                                       |`  
 `|  This approaches your daily target of |`  
 `|  **2,300mg** (95%).                   |`  
