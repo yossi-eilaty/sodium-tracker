@@ -116,39 +116,39 @@ The **Sodium Tracker** application is a serverless, mobile-first web app designe
 ## **3\. System Architecture & Component Interaction**
 
 ```mermaid
-`sequenceDiagram`  
-    `actor User`  
-    `participant FE as Frontend App (Client-Side Search / Fuse.js)`  
-    `participant APIGW as API Gateway (HTTP API)`  
-    `participant Lambda as AWS Lambda (Serverless Compute)`  
-    `participant Bedrock as Amazon Bedrock / LLM (AI Web Search)`  
-    `participant S3 as Amazon S3 (Images)`  
-    `participant DDB as Amazon DynamoDB (Core Data)`
+sequenceDiagram
+    actor User
+    participant FE as Frontend App (Client-Side Search / Fuse.js)
+    participant APIGW as API Gateway (HTTP API)
+    participant Lambda as AWS Lambda (Serverless Compute)
+    participant Bedrock as Amazon Bedrock / LLM (AI Web Search)
+    participant S3 as Amazon S3 (Images)
+    participant DDB as Amazon DynamoDB (Core Data)
 
-    `User->>FE: Enter food query / Calculator input (100g/100ml)`  
-    `alt AI Lookup Mode`  
-        `FE->>APIGW: POST /portions/calculate-ai (query)`  
-        `APIGW->>Lambda: Invoke AI Lookup`  
-        `Lambda->>Bedrock: Prompt LLM with web search tool`  
-        `Bedrock-->>Lambda: Return sodium per 100g or 100ml`  
-        `Lambda-->>FE: Return suggested nutritional data`  
-    `end`
+    User->>FE: Enter food query / Calculator input (100g/100ml)
+    alt AI Lookup Mode
+        FE->>APIGW: POST /portions/calculate-ai (query)
+        APIGW->>Lambda: Invoke AI Lookup
+        Lambda->>Bedrock: Prompt LLM with web search tool
+        Bedrock-->>Lambda: Return sodium per 100g or 100ml
+        Lambda-->>FE: Return suggested nutritional data
+    end
 
-    `User->>FE: Log intake (select Count, Grams, or ml)`  
-    `FE->>APIGW: POST /intake/pre-check`  
-    `APIGW->>Lambda: Calculate daily aggregate vs threshold`  
-    `Lambda->>DDB: Query today's logs`  
-    `DDB-->>Lambda: Current daily sum`  
-    `Lambda-->>FE: Return warning status (True/False)`
+    User->>FE: Log intake (select Count, Grams, or ml)
+    FE->>APIGW: POST /intake/pre-check
+    APIGW->>Lambda: Calculate daily aggregate vs threshold
+    Lambda->>DDB: Query today's logs
+    DDB-->>Lambda: Current daily sum
+    Lambda-->>FE: Return warning status (True/False)
 
-    `alt Warning Triggered`  
-        `FE->>User: Display Warning Modal`  
-    `end`
+    alt Warning Triggered
+        FE->>User: Display Warning Modal
+    end
 
-    `User->>FE: Confirm intake`  
-    `FE->>APIGW: POST /intake`  
-    `APIGW->>Lambda: Save final intake record`  
-    `Lambda->>DDB: Write to User Partition`
+    User->>FE: Confirm intake
+    FE->>APIGW: POST /intake
+    APIGW->>Lambda: Save final intake record
+    Lambda->>DDB: Write to User Partition
 ```
 ## **4\. Technical Appendix: Infrastructure & Software Stack Recommendations**
 
