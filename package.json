@@ -1,0 +1,26 @@
+{
+  "name": "sodium-tracker",
+  "version": "1.0.0",
+  "description": "The **Sodium Tracker** application is a serverless, mobile-first web app designed to monitor, calculate, and log daily sodium consumption. Key capabilities include a flexible unit portion calculator (supporting both 100g and 100ml baselines), manual and AI-assisted web lookups, local user management with encrypted authentication, a pre-check consumption warning system, multi-unit food intake logging (count, grams, or milliliters), and a hybrid private/shared food catalog equipped with image support and local fuzzy search.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yossi-eilaty/sodium-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yossi-eilaty/sodium-tracker/issues"
+  },
+  "homepage": "https://github.com/yossi-eilaty/sodium-tracker#readme",
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
