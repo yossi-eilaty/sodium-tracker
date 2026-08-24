@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Find the PID for 'ollama app.exe'
+PID=$(tasklist | grep -i "ollama app.exe" | awk '{print $3}')
+
+if [ -z "$PID" ]; then
+    echo "No running 'ollama app.exe' process found."
+    exit 1
+fi
+
+echo "Found 'ollama app.exe' running under PID: $PID"
+echo "Terminating process and all descendant processes..."
+
+# /F = force, /T = kill process tree (descendants), // for Git Bash escape
+taskkill //F //T //PID "$PID"

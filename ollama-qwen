@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "If ollama fails to start with error 0xc0000409 run ./ollama-kill and then retry"
+export CUDA_VISIBLE_DEVICES="-1"
+ollama run qwen2.5-coder:1.5b
