@@ -21,7 +21,7 @@ The **Sodium Tracker** application is a serverless, mobile-first web app designe
 `|  Password:                            |`  
 `|  [ ******************               ] |`  
 `|                                       |`  
-`|       [ ENTER APP / כניסה ]          |`  
+`|       [ ENTER APP / כניסה ]           |`  
 `|                                       |`  
 `+---------------------------------------+`
 
