@@ -26,53 +26,21 @@ The **Sodium Tracker** application is a serverless, mobile-first web app designe
 
 
 ```mermaid
-block-beta
-    columns 1
-    
-    %% Main Container
-    block:ScreenContainer
-        columns 1
-        
-        space
-        title["<b>SODIUM TRACKER (מעקב נתרן)</b>"]
-        space
-        
-        %% Tab Switcher
-        block:Tabs
-            columns 2
-            loginTab["<b>[ Login ]</b>"]
-            regTab["Register"]
-        end
-        
-        space
-        
-        %% Form Fields
-        block:Form
-            columns 1
-            lblEmail["Username / Email:"]
-            inputEmail["yossi@example.com"]
-            
-            space
-            
-            lblPass["Password:"]
-            inputPass["••••••••••••••••"]
-        end
-        
-        space
-        
-        %% Action Button
-        btnSubmit["<b>ENTER APP / כניסה</b>"]
-        space
+graph TD
+    subgraph Screen ["📱 SODIUM TRACKER (מעקב נתרן)"]
+        direction TB
+        Tabs["<b>[ Login ]</b> &nbsp;&nbsp;&nbsp;&nbsp; Register"] --> EmailLbl["Username / Email:"]
+        EmailLbl --> EmailBox[" yossi@example.com "]
+        EmailBox --> PassLbl["Password:"]
+        PassLbl --> PassBox[" •••••••••••••••• "]
+        PassBox --> Btn["<b> ENTER APP / כניסה </b>"]
     end
 
-    %% Styling classes
-    style ScreenContainer fill:#f9f9f9,stroke:#333,stroke-width:2px,padding:20px
-    style title fill:#2563eb,stroke:#2563eb,color:#fff
-    style loginTab fill:#ffffff,stroke:#2563eb,stroke-width:2px,color:#2563eb
-    style regTab fill:#e2e8f0,stroke:#cbd5e1,color:#64748b
-    style inputEmail fill:#ffffff,stroke:#cbd5e1,color:#1e293b
-    style inputPass fill:#ffffff,stroke:#cbd5e1,color:#1e293b
-    style btnSubmit fill:#2563eb,stroke:#1d4ed8,color:#fff
+    style Screen fill:#f8fafc,stroke:#334155,stroke-width:2px
+    style Tabs fill:#ffffff,stroke:#cbd5e1,stroke-width:1px
+    style EmailBox fill:#ffffff,stroke:#94a3b8,stroke-width:1px
+    style PassBox fill:#ffffff,stroke:#94a3b8,stroke-width:1px
+    style Btn fill:#2563eb,stroke:#1d4ed8,color:#ffffff,stroke-width:2px
 ```
 
 ### **Screen 2: Dashboard & Daily Intake Tracker**
