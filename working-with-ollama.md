@@ -63,6 +63,12 @@ $env:CUDA_VISIBLE_DEVICES="-1"
 ollama run qwen2.5-coder:1.5b
 ```
 
+```bash
+# In Git Bash (Ensure background tray process is closed first)
+export CUDA_VISIBLE_DEVICES="-1"
+ollama run qwen2.5-coder:1.5b
+```
+
 ---
 
 ## 6. Model Sizing & VRAM Reference
