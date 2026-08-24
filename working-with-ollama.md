@@ -19,7 +19,7 @@ A summary of essential commands, environment configurations, and model reference
 
 Commands executed inside an active `ollama run` session:
 
-* `/show config` — Displays the current model's architecture, system prompt, and parameters.
+* `/show (info|license|system|parameters|template)` — Displays the current model's architecture, system prompt, and parameters.
 * `/set parameter num_ctx <size>` — Adjusts context window length for the active session (e.g., `/set parameter num_ctx 16384`).
 * `/clear` — Flushes active conversation history from memory without exiting.
 * `/bye` — Exits the interactive prompt and unloads model weights from memory.
