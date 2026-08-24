@@ -115,6 +115,7 @@ The **Sodium Tracker** application is a serverless, mobile-first web app designe
 
 ## **3\. System Architecture & Component Interaction**
 
+```mermaid
 `sequenceDiagram`  
     `actor User`  
     `participant FE as Frontend App (Client-Side Search / Fuse.js)`  
@@ -148,7 +149,7 @@ The **Sodium Tracker** application is a serverless, mobile-first web app designe
     `FE->>APIGW: POST /intake`  
     `APIGW->>Lambda: Save final intake record`  
     `Lambda->>DDB: Write to User Partition`
-
+```
 ## **4\. Technical Appendix: Infrastructure & Software Stack Recommendations**
 
 ### **A. AWS Cloud Services (Infrastructure Stack)**
