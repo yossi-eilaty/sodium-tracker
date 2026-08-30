@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# OpenRouter API key used by Claudish to authenticate requests
+export OPENROUTER_API_KEY="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"
+
+# Define the max token window to match DeepSeek V3 (163,840 tokens)
+export CLAUDE_CODE_MAX_CONTEXT_TOKENS=163840
+
+# Suppress unknown model context window warnings inside Claude Code
+#export CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1
+
+# Launch Claudish with DeepSeek as the main model and Qwen as the fast worker
+claudish \
+  --model openrouter@deepseek/deepseek-chat \
+  --model-haiku openrouter@qwen/qwen-2.5-coder-32b-instruct \
+  --no-auto-approve

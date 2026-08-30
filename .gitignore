@@ -1,3 +1,19 @@
 node_modules/
-dist/
+backend/dist/
 
+**/build/
+**/.dart_tool/
+**/.idea/
+**/.vscode/
+**/.DS_Store
+**/Thumbs.db
+**/*.iml
+**/local.properties
+**/flutter_assets/
+**/pubspec.lock
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/.metadata
