@@ -1,4 +1,4 @@
-run-claude
+run-claude*
 node_modules/
 backend/dist/
 
