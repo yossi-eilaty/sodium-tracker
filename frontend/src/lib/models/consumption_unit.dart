@@ -1,0 +1,1 @@
+enum ConsumptionUnit { count, weightOrVolume }
